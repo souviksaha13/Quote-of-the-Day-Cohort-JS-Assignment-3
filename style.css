@@ -48,6 +48,7 @@ h2 {
     font-family: 'Roboto', sans-serif;
     font-size: x-large;
     text-align: justify;
+    hyphens: auto;
     font-weight: bold;
 }
 
@@ -124,4 +125,13 @@ button:hover {
 
 button:active {
     transform: scale(1.025);
+}
+
+
+/*  Media-Query for extra small screens (Phones) */
+@media (max-width: 480px) {
+    button {
+        font-size: 0.9rem;
+        padding: 0.6rem 0.8rem;
+    }
 }
