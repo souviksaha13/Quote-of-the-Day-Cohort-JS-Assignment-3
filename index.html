@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote of the Day</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/980736308b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Main Container for the Quote Generator -->
+    <div class="container">
+        <!-- Quote Section -->
+        <div id="quote-container">
+            <h2>Quote of the Day</h2>
+            <!-- Quote Display Area -->
+            <div id="quote-area">
+                <i class="fa-solid fa-quote-left"></i>
+                <p id="quote"></p>
+                <i class="fa-solid fa-quote-right"></i>
+            </div>
+            <!-- Author Display Area -->
+            <div id="author-area">
+                <span>--  </span>
+                <p id="author"></p>
+            </div>
+        </div>
+
+        <!-- Button Section -->
+        <div class="buttons">
+            <ul>
+                <li>
+                    <button id="copy" onclick="copyToClipboard()">
+                        <i class="fa-regular fa-copy"></i>
+                    </button>
+                </li>
+
+                <li>
+                    <button id="share-on-x" onclick="shareOnTwitter()">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </button>
+                </li>
+
+                <li>
+                    <button id="export-to-computer" onclick="exportToComputer()">
+                        <i class="fa-solid fa-download"></i>
+                    </button>
+                </li>
+            </ul>
+
+            <!-- New Quote button that changes to loading when data is being loaded -->
+            <button id="new-quote" onclick="addNewQuote()">New Quote</button>
+        </div>
+    </div>
+
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
